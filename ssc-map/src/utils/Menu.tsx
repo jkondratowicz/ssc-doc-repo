@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import githubLogo from '../assets/github.svg';
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,6 +39,9 @@ export const Nav = () => {
         <Link to="/" aria-label="SSC" title="SSC" className="inline-flex items-center lg:mx-auto">
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">SSC</span>
         </Link>
+        <a href="https://github.com/jkondratowicz/ssc-doc-repo/">
+          <img src={githubLogo} alt="GitHub" className="h-6 float-right" />
+        </a>
         <div className="ml-auto md:hidden">
           <button
             aria-label="Open Menu"
